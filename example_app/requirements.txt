@@ -1,2 +1,3 @@
 streamlit-camera-input-live
 opencv-python-headless
+streamlit-back-camera-input
