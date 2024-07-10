@@ -1,7 +1,17 @@
+import streamlit as st
+from streamlit_back_camera_input import back_camera_input
+
+image = back_camera_input()
+if image:
+    st.image(image)
+"""
 import cv2
 import numpy as np
 import streamlit as st
 from camera_input_live import camera_input_live
+
+
+
 
 "# Streamlit camera input live Demo"
 "## Try holding a qr code in front of your webcam"
@@ -23,3 +33,4 @@ if image is not None:
         with st.expander("Show details"):
             st.write("BBox:", bbox)
             st.write("Straight QR code:", straight_qrcode)
+"""
