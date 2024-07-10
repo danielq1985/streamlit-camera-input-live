@@ -24,8 +24,7 @@ if image is not None:
 
     if data:
         st.write("# Found QR code")
-        st.write("BBox:", bbox)
-        ##st.write(data)
+        st.write(data)
         ##with st.expander("Show details"):
           ##  st.write("BBox:", bbox)
           ##  st.write("Straight QR code:", straight_qrcode)
