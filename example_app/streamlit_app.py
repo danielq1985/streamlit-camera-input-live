@@ -28,8 +28,8 @@ if image is not None:
             st.write("BBox:", bbox)
             st.write("Straight QR code:", straight_qrcode)
 
-"""
+'''
 image = back_camera_input()
 if image:
     st.image(image)
-"""
+'''
