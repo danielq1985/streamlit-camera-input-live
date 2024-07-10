@@ -8,6 +8,7 @@ from camera_input_live import camera_input_live
 
 
 "# Test app"
+"### tap image when centered and in focus"
 
 ##image = camera_input_live()
 image = back_camera_input()
@@ -24,12 +25,6 @@ if image is not None:
     if data:
         st.write("# Found QR code")
         st.write(data)
-        with st.expander("Show details"):
-            st.write("BBox:", bbox)
-            st.write("Straight QR code:", straight_qrcode)
-
-'''
-image = back_camera_input()
-if image:
-    st.image(image)
-'''
+        ##with st.expander("Show details"):
+          ##  st.write("BBox:", bbox)
+          ##  st.write("Straight QR code:", straight_qrcode)
