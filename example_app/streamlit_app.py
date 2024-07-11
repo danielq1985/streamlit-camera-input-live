@@ -14,7 +14,7 @@ with col_left:
 
 with col_right:
     if x is not None:
-        st.image(x.getvalue(), caption="Your photo", use_column_width=True)
+        ##st.image(x.getvalue(), caption="Your photo", use_column_width=True)
         bytes_data = x.getvalue()
         cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
