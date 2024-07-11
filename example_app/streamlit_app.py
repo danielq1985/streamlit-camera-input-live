@@ -1,8 +1,10 @@
 import streamlit as st
 import requests
+import cv2
+import numpy as no
 
 st.set_page_config(layout="wide")
-st.title("Camera input demo app. Take photo and see it toonified!")
+st.title("Test App")
 
 col_left, _, col_right = st.columns([5, 1, 5])
 
