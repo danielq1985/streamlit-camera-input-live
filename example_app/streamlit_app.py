@@ -6,23 +6,23 @@ st.set_page_config(layout="wide")
 st.title("Test App")
 
 
+image = st.camera_input(label="Camera View", key="camera_input_file")
 
 
-
-x = st.camera_input(label="", key="camera_input_file")
-
-
-if x is not None:
-    #st.image(x.getvalue(), caption="Your photo", use_column_width=True)
-    bytes_data = x.getvalue()
+if image is not None:
+    bytes_data = image.getvalue()
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
     detector = cv2.QRCodeDetector()
     data, bbox, straight_qrcode = detector.detectAndDecode(cv2_img)
 
     if data:
-        st.write("# Found QR code")
+        st.write("### Found QR code")
         st.write(data)
-        ##with st.expander("Show details"):
-        ##  st.write("BBox:", bbox)
-        ##  st.write("Straight QR code:", straight_qrcode)
+        if data == 'P02 V1C T01 S000':
+            st.write('Match!')
+        else:
+            st.write('No match.')
+
+    else:
+        st.write("### No QR code")
