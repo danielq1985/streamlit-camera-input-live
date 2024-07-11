@@ -1,10 +1,4 @@
 import streamlit as st
-from streamlit_back_camera_input import back_camera_input
-import cv2
-import numpy as np
-from camera_input_live import camera_input_live
-
-
 import requests
 
 st.set_page_config(layout="wide")
