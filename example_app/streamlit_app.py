@@ -36,3 +36,5 @@ if image is not None:
         ##with st.expander("Show details"):
           ##  st.write("BBox:", bbox)
           ##  st.write("Straight QR code:", straight_qrcode)
+
+          """
