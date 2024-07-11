@@ -15,13 +15,12 @@ with col_left:
 with col_right:
     if x is not None:
         st.image(x.getvalue(), caption="Your photo", use_column_width=True)
-"""
 
-"# Test app"
-"### tap image when centered and in focus"
 
 ##image = camera_input_live()
-image = back_camera_input()
+#$image = back_camera_input()
+image = x
+
 
 if image is not None:
     st.image(image)
@@ -39,4 +38,4 @@ if image is not None:
           ##  st.write("BBox:", bbox)
           ##  st.write("Straight QR code:", straight_qrcode)
 
-          """
+          
